@@ -60,35 +60,17 @@
     echo date("m/");
     echo date("y  ");?>
 
-                    <label class="Hora" id="displaytime">
+                    <label id="display-time">
                         <script>
                         function myFunc() {
                             var now = new Date();
                             var time = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
-                            document.getElementById('displaytime').innerHTML = time;
+                            document.getElementById('display-time').innerHTML = time;
                         }
                         setInterval(myFunc, 1000);
                         </script>
                     </label>
-                    <br>
-                    <label class="Hora" id="displaytime1">
-                        <script>
-                        function myFunc1() {
-
-                            fecha = new Date();
-                            hora = fecha.getHours();
-
-                            if (hora >= 18 && hora < 9) {
-                                texto = "Cerrado";
-                            }
-                                if (hora >= 9 && hora < 18) {
-                                    texto = "Abierto";
-                                }
-                                document.getElementById('displaytime1').innerHTML = texto;
-                        }
-                        
-                        </script>
-                    </label></br>
+                    <br><label>Cerrado</label></br>
                 </figure>
                 <div class="navbar-end">
                     <div class="navbar-item">
@@ -117,208 +99,101 @@
     </section>
 
     <!-- fin header -->
-    <!-- Tarjetas Servicios-->
-
-    <section class="section">
-        <div class="columns is-centered is-variable is-8">
-            <div class="column is-one-quarter">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="../Images/Home/venta.jpg" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                            </div>
-                            <div class="media-content">
-                                <p class="title is-4">Compra de Propiedades</p>
-                                <p class="subtitle is-6">@johnsmith</p>
+    <!--Inicio Hero-->
+    <section class="section is-small">
+        <h1 class="title">Jessica Sanchez</h1>
+        <div class="columns">
+            <div class="column">
+                <seccion class="hero">
+                    <div class="hero-body">
+                        <p class="title">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                        alt="Placeholder image">
+                                </figure>
                             </div>
                         </div>
-
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                        </div>
                     </div>
-                </div>
-
             </div>
-            <div class="column is-one-quarter">
-
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="../Images/Home/trato.jpg" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                            </div>
-                            <div class="media-content">
-                                <p class="title is-4">Venta de Propiedades</p>
-                                <p class="subtitle is-6">@johnsmith</p>
+            </seccion>
+            <div class="column">
+                <seccion class="hero">
+                    <div class="hero-body">
+                        <p class="title">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="content is-small">
+                                        <h1>Hello World</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan,
+                                            metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo
+                                            nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel
+                                            erat vel, interdum mattis neque.</p>
+                                        <h2>Second level</h2>
+                                        <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit.
+                                            Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin
+                                            pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem
+                                            rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
+                                        </p>
+                                        <ul>
+                                            <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+                                            <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+                                            <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+                                            <li>Ut non enim metus.</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                        </div>
                     </div>
-                </div>
-
             </div>
-            <div class="column is-one-quarter">
-
+            </seccion>
+    </section>
+    <section class="section is-medium">
+        <h1 class="title">Jessica Sanchez</h1>
+        <div class="columns">
+            <div class="column">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.571155361936!2d-71.6116905493019!3d-33.590482180639555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662391875747ab3%3A0x2d6fb565cf22d5b8!2sJ.S.PROPIEDADES%20SpA!5e0!3m2!1ses-419!2scl!4v1637638733341!5m2!1ses-419!2scl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="column">
                 <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="../Images/Home/arriendo.jpg" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
+                    <figure>
+                        <div class="card-content">
+                            <div class="content">
+                                <br>
+                                <div class="content is-small">
+                                    <h1>Ubicación</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus
+                                        ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu
+                                        lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel,
+                                        interdum mattis neque.</p>
+                                    <h2>Second level</h2>
+                                    <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit.
+                                        Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium
+                                        urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus
+                                        dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+                                    <ul>
+                                        <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+                                        <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+                                        <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+                                        <li>Ut non enim metus.</li>
+                                    </ul>
+                                </div>orem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit
+                                non mi
+                                porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient
+                                montes,
+                                nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
                             </div>
-                            <div class="media-content">
-                                <p class="title is-4">Arriendo de Propiedades</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                        </div>
-                    </div>
+                    </figure>
                 </div>
-
             </div>
         </div>
-
     </section>
-    <!-- fin -->
-    <!-- Tarjetas Propiedades -->
-    <section class="section">
-        <h1 class="title">Propiedades</h1>
-        <h2 class="subtitle">
-            <div class="columns is-centered is-variable is-8">
-                <div class="column is-one-quarter">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="../Images/Home/house 2.jpg" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">Casas</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Si buscas una casa para comprar o arrendar aqui es la mejor opcion!. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-quarter">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="../Images/Home/building 2.jpg" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">Departamentos</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Si lo que necesistas es un departamento buscar aqui te ayudara!. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-quarter">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="../Images/Home/office 2.jpg" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">Oficinas</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Tienes una compañia? te ayudamos a encontrar una oficina perfecta!
-                                <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-quarter">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="../Images/Home/mountain 2.jpg" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">Terrenos</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Si tienes planes de construir tu propia casa, busca un terreno aqui!. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </h2>
-    </section>
-
-    <!-- Fin Tarjetas -->
-
+    <!-- Fin Hero-->
     <!-- Footer -->
     <footer class="footer">
         <div class="columns">
@@ -462,9 +337,7 @@
 
     });
     </script>
+
 </body>
 
 </html>
-<script src="JavaScript/JS.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
